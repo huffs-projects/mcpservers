@@ -1,0 +1,20 @@
+[package]
+name = "nix-flakes-mcp-server"
+version = "2.0.0"
+edition = "2021"
+
+[dependencies]
+warp = "0.3"
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+thiserror = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+async-trait = "0.1"
+atty = "0.2"
+
+[dev-dependencies]
+tempfile = "3.8"
+
