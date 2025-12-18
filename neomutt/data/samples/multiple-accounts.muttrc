@@ -1,0 +1,23 @@
+# Multiple Accounts Configuration
+# Using account-hook to configure different accounts
+
+# Basic settings
+set real_name = "Your Name"
+set editor = "vim"
+set pager = "less"
+
+# Account 1 - Personal
+account-hook imap://imap.personal.com/ 'set imap_user=personal@example.com imap_pass=pass1'
+account-hook imap://imap.personal.com/ 'set from=personal@example.com'
+account-hook imap://imap.personal.com/ 'set smtp_url=smtp://personal@example.com@smtp.personal.com:587/'
+
+# Account 2 - Work
+account-hook imap://imap.work.com/ 'set imap_user=work@example.com imap_pass=pass2'
+account-hook imap://imap.work.com/ 'set from=work@example.com'
+account-hook imap://imap.work.com/ 'set smtp_url=smtp://work@example.com@smtp.work.com:587/'
+
+# Default folder (first account)
+set folder = "imap://imap.personal.com:993"
+set ssl_force_tls = yes
+set ssl_starttls = yes
+

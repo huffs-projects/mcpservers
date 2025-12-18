@@ -1,0 +1,22 @@
+# Maildir Configuration
+# For local mail storage using Maildir format
+
+# Maildir format
+set mbox_type = Maildir
+set folder = "~/Mail"
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set postponed = "+Drafts"
+set trash = "+Trash"
+
+# Basic settings
+set real_name = "Your Name"
+set from = "your.email@example.com"
+
+# Editor and pager
+set editor = "vim"
+set pager = "less"
+
+# Mailboxes
+set mailboxes = "+INBOX +Sent +Drafts +Trash"
+

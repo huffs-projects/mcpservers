@@ -1,0 +1,29 @@
+# Encryption Configuration
+# GPG/PGP encryption and signing
+
+# Basic settings
+set real_name = "Your Name"
+set from = "your.email@example.com"
+
+# GPG settings
+set crypt_use_gpgme = yes
+set crypt_autosign = yes
+set crypt_autoencrypt = yes
+set crypt_replyencrypt = yes
+set crypt_replysign = yes
+set crypt_replysignencrypted = yes
+
+# GPG key (optional - will use default)
+# set pgp_default_key = "your-key-id"
+
+# Editor and pager
+set editor = "vim"
+set pager = "less"
+
+# IMAP/SMTP (configure as needed)
+set folder = "imap://imap.example.com:993"
+set imap_user = "your.email@example.com"
+set ssl_force_tls = yes
+set smtp_url = "smtp://your.email@example.com@smtp.example.com:587/"
+set ssl_starttls = yes
+

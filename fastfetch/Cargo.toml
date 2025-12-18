@@ -1,0 +1,21 @@
+[package]
+name = "fastfetch-mcp-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rmcp = { version = "0.8", features = ["server", "transport-io"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+anyhow = "1.0"
+dirs = "5.0"
+jsonschema = "0.17"
+jsonc-parser = { version = "0.22", features = ["serde"] }
+async-trait = "0.1"
+thiserror = "1.0"
+reqwest = { version = "0.11", features = ["json"] }
+
+[dev-dependencies]
+tempfile = "3.8"
+tokio-test = "0.4"

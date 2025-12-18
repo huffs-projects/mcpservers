@@ -1,0 +1,27 @@
+# Basic NeoMutt Configuration
+# A minimal configuration to get started
+
+# Basic settings
+set real_name = "Your Name"
+set from = "your.email@example.com"
+
+# Editor and pager
+set editor = "vim"
+set pager = "less"
+
+# IMAP settings
+set folder = "imap://imap.example.com:993"
+set imap_user = "your.email@example.com"
+set ssl_force_tls = yes
+set spoolfile = "+INBOX"
+set mailboxes = "+INBOX"
+
+# SMTP settings
+set smtp_url = "smtp://your.email@example.com@smtp.example.com:587/"
+set ssl_starttls = yes
+
+# Mailboxes
+set record = "+Sent"
+set postponed = "+Drafts"
+set trash = "+Trash"
+

@@ -1,0 +1,29 @@
+# Gmail Configuration
+# Requires app-specific password from Google Account settings
+
+# Basic settings
+set real_name = "Your Name"
+set from = "your.email@gmail.com"
+
+# Gmail IMAP
+set folder = "imap://imap.gmail.com:993"
+set imap_user = "your.email@gmail.com"
+set imap_pass = "your-app-specific-password"
+set ssl_force_tls = yes
+set spoolfile = "+INBOX"
+set mailboxes = "+INBOX +Sent +Drafts +Trash +Spam"
+
+# Gmail SMTP
+set smtp_url = "smtp://your.email@gmail.com@smtp.gmail.com:587/"
+set smtp_pass = "your-app-specific-password"
+set ssl_starttls = yes
+
+# Mailboxes
+set record = "+[Gmail]/Sent Mail"
+set postponed = "+[Gmail]/Drafts"
+set trash = "+[Gmail]/Trash"
+
+# Editor and pager
+set editor = "vim"
+set pager = "less"
+
